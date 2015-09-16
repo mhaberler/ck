@@ -14,11 +14,10 @@ addons:
 #    packages:
 #    - uuid-dev
 
-before_install:
-- make regressions
+#before_install:
+#- make regressions
 
-before_script:
-- ./configure
+#before_script:
+#- ./configure
 
-# Build and check this project according to the BUILD_TYPE
 script: ./ci_build.sh
