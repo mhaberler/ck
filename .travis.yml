@@ -10,12 +10,14 @@ sudo: false
 env:
 
 addons:
-#  apt:
-#    packages:
-#    - uuid-dev
+  apt:
+    sources:
+    - ubuntu-toolchain-r-test
+    packages:
+    - gcc-4.8
 
-#before_install:
-#- make regressions
+before_install:
+# - make check
 
 #before_script:
 #- ./configure
